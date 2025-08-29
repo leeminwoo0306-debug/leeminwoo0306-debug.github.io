@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포트폴리오 웹사이트 프로젝트 설계- 무언가 잘못된거 같아... 중간에 꼬였어...</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #444;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+    .highlight {
+      background: #eee;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>포트폴리오 웹사이트 프로젝트 설계</h1>
+    <p>하드웨어 · 소프트웨어 · 시스템 시나리오 · 요구사항</p>
+  </header>
+
+  <section>
+    <h2>1. 프로젝트 목적</h2>
+    <p>개인 포트폴리오를 온라인에 공개하여 <span class="highlight">채용 담당자, 협업 파트너, 개발자 커뮤니티</span>가 
+    본인의 역량과 프로젝트를 쉽게 확인할 수 있도록 한다.</p>
+  </section>
+
+  <section>
+    <h2>2. 하드웨어 구조</h2>
+    <ul>
+      <li>사용자 단말: PC, 모바일, 태블릿 (웹 브라우저)</li>
+      <li>서버: GitHub Pages (정적 웹 호스팅)</li>
+      <li>네트워크: HTTPS 기반 요청/응답</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. 소프트웨어 구조</h2>
+    <ul>
+      <li><strong>index.html</strong> : 페이지 뼈대</li>
+      <li><strong>style.css</strong> : 디자인 및 반응형 UI</li>
+      <li><strong>script.js</strong> : 다크 모드, 폼 처리</li>
+      <li><strong>외부 서비스</strong> :
+        <ul>
+          <li>Google Fonts, Font Awesome (디자인 리소스)</li>
+          <li>Formspree API (연락처 폼 처리)</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. 시스템 시나리오</h2>
+    <ol>
+      <li>사용자가 브라우저에 <span class="highlight">username.github.io</span> 입력</li>
+      <li>
